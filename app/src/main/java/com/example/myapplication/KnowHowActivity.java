@@ -1,10 +1,13 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 public class KnowHowActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -17,12 +20,11 @@ public class KnowHowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_know_how);
 
-
         recyclerView = findViewById(R.id.recyclerView);
         String [] s1 = {"지진 발생시", "쓰나미 발생시", "태풍 발생시","화재 발생시", "산불 발생시","~~~발생시","~~~~발생시" };
         String [] s2 = {
 
-                "지진 발생시 행동요령\n" +
+                "지진 발생시 국민행동요령\n" +
                         "1. 집 안에서의 안전을 확보합니다.\n" +
                         "∙ 탁자 아래와 같이 집 안에서 대피할 수 있는 안전한 대피 공간을 미리 파악해 둡니다.\n" +
                         "∙ 유리창이나 넘어지기 쉬운 가구 주변 등 위험한 위치를 확인해 두고 지진 발생 시 가까이 가지 않도록 합니다.\n" +
