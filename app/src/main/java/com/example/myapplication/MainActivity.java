@@ -47,6 +47,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        layout_3 = findViewById(R.id.layout_3);
+
+        layout_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(getApplicationContext(), "A 버튼 눌러짐", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
 
         layout_4= findViewById(R.id.layout_4);
         layout_4.setOnClickListener(new View.OnClickListener(){
