@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -10,17 +11,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/mainscreen"
         android:label="구해조"
-        android:roundIcon="@drawable/icon"
+        android:roundIcon="@drawable/mainscreen"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyAdapter"></activity>
+        <activity android:name=".MyAdapter"
+            tools:ignore="Instantiatable"></activity>
         <activity android:name=".KnowHowActivity2" />
         <activity android:name=".KnowHowActivity" />
-
-
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,19 +38,16 @@
         <activity android:name=".SubActivity2" />
         <activity android:name=".SudActivity" />
 
-        <activity android:name=".MainActivity2" />
-
-        <activity android:name=".MainActivity" />
-
-        <activity android:name=".FirstScreenActivity"
-            android:theme="@style/FirstScreenTheme"
-            android:screenOrientation="portrait">
+        <activity android:name=".SplashActivity"
+                    android:theme="@style/SplashTheme"
+                    android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
 
+        <activity android:name=".MainActivity">
         </activity>
 
     </application>
