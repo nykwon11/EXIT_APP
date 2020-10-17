@@ -20,7 +20,7 @@
             android:fontFamily="@font/nanum_b"
             android:gravity="center"
             android:textColor="#FFFFFF"
-            android:text="GU HAE JOO"
+            android:text="GU HAE JO"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="40dp"/>
 
