@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        layout_4 = findViewById(R.id.layout_4);
 
         layout_4.setOnClickListener(new View.OnClickListener() {
             @Override
